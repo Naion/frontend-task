@@ -1,7 +1,7 @@
 // Created new XMLHttpRequest.
 var xhttp = new XMLHttpRequest();
 
-getImageList();
+onInit()
 
 function getImageList() {
     // API's endpoint and method that is going to be used.
@@ -32,4 +32,9 @@ function printImages(jsonResponse) {
         </div>
         `;
     }
+}
+
+// Method to handle any additional initialization tasks.
+function onInit() {
+    getImageList();
 }
