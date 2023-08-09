@@ -1,0 +1,38 @@
+@import "home-style.css";
+@import "upload-image-style.css";
+
+#uuid-input {
+    /* CSS for the Input bar */
+    position: relative;
+    cursor: text;
+    font-size: 16px;
+    line-height: 20px;
+    padding: 20px 16px;
+    width: 35%;
+    background-color: #fff;
+    border: 1.5px solid #04AA6D;
+    border-radius: 8px;
+    color: rgb(35, 38, 59);
+    box-shadow: inset 0 1px 4px 0 rgb(119 122 175 / 30%);
+    overflow: hidden;
+    transition: all 100ms ease-in-out;
+}
+
+#uuid-input:focus {
+    /* CSS for the Submit button while selected*/
+    border: 4px solid #04AA6D;
+    border-color: #04AA6D;
+    box-shadow: 0 1px 0 0 rgb(35 38 59 / 5%);
+}
+
+#analyse-btn {
+    /* Added a small margin to the Submit button */
+    margin-top: 10px;
+}
+
+#image-info {
+    /* CSS for the displayed information about the image  */
+    font-size: 20px;
+    text-decoration-line: underline;
+    text-decoration-color: #04AA6D;
+}

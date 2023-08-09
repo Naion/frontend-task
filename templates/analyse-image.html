@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LogMeal Technical Test</title>
+    <link rel="stylesheet" href="../analyse-image.css">
+</head>
+
+<body>
+    <div class="nav-bar">
+        <ul>
+            <li><img src="../assets/logmeal_logo.png" alt="logo" id="logMeal-logo"></li>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="upload-image.html">Upload image</a></li>
+            <li><a class="active" href="analyse-image.html">Analyse image</a></li>
+            <li><a href="list-images.html">List images</a></li>
+        </ul>
+
+    </div>
+    <!-- Input for the image ID -->
+    <input type="text" id="uuid-input" name="file" accept="text">
+    <!-- Button to start the search of the wanted image -->
+    <button type="submit" id="analyse-btn">Submit</button><br>
+
+    <!-- Holder for the image if found -->
+    <img class="card" id="found-image">
+    <!-- Information about the image -->
+    <pre id="image-info"></pre><br>
+
+    <script src="../analyse-image.js"></script>
+</body>
+
+</html>

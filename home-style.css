@@ -1,0 +1,66 @@
+body {
+    /* Styling dark mode */
+    background-color: #212121;
+    color: white;
+    font-family: Trebuchet MS;
+    position: relative;
+    height: 100%;
+}
+
+ul {
+    /* Navigation bar */
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    border-radius: 10px;
+}
+
+li {
+    /* Text aligned to the left */
+    float: left;
+}
+
+li a {
+    /* Hiperlinks */
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 18px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    /* Hiperlinks with mouse hovering*/
+    background-color: #111;
+}
+
+.active {
+    /* Current page */
+    background-color: #04AA6D;
+}
+
+#logMeal-logo {
+    padding: 5px;
+    width: 40px;
+    height: 40px;
+}
+
+#personal-info {
+    /* Placing body text sticked to the right */
+    position: relative;
+    text-align: right;
+}
+
+h1 {
+    top: 100;
+    right: 0;
+    font-size: 60px;
+}
+
+h2 {
+    right: 0;
+    top: 150px;
+    font-size: 36px;
+}
