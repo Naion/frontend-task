@@ -11,7 +11,7 @@ RUN apt-get update && apt-get install -y git
 RUN git clone https://github.com/Naion/frontend-task.git .
 
 # Copy the frontend files to the Nginx web server's default root directory
-COPY ./index.html /usr/share/nginx/html
+COPY . /usr/share/nginx/html
 
 # Expose port 80 for Nginx
 EXPOSE 80

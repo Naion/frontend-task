@@ -5,7 +5,7 @@ onInit()
 
 function getImageList() {
     // API's endpoint and method that is going to be used.
-    xhttp.open("GET", "http://localhost:5000/list_images", true);
+    xhttp.open("GET", "http://172.17.0.2:5000/list_images", true);
     xhttp.setRequestHeader("Content-type", "application/json");
     xhttp.onreadystatechange = onReadyStateChange;
     xhttp.send();
