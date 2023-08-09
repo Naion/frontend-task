@@ -6,7 +6,7 @@ onInit();
 // This function will get both height and width data from the given image.
 function getImageHeightWidth() {
     // API's endpoint and method that is going to be used.
-    xhttp.open("POST", "localhost:5000/analyse_image", true);
+    xhttp.open("POST", "http://localhost:5000/analyse_image", true);
     xhttp.setRequestHeader("Content-type", "application/json");
     // Get the ID and pass it to the API
     var innerText = document.getElementById("uuid-input").value;
