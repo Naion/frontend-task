@@ -1,12 +1,14 @@
 
 # Use a lightweight nginx image to serve the frontend
-FROM nginx:stable-alpine
+FROM nginx:stable
+
+WORKDIR /test
 
 # Install Git
-RUN apk update && apk add --update git
+RUN apt-get update && apt-get install -y git
 
 # Clone the frontend repository from GitHub
-RUN git clone https://github.com/Naion/frontend-task.git . --allow-unrelated-histories
+RUN git clone https://github.com/Naion/frontend-task.git .
 
 # Copy the frontend files to the Nginx web server's default root directory
 COPY ./index.html /usr/share/nginx/html
