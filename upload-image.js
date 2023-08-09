@@ -38,7 +38,7 @@ function submitJSON() {
     // Only call API if the extension is supported.
     if (isExtensionTypeSuccess) {
         // API's endpoint and method that is going to be used.
-        xhttp.open("POST", "http://172.17.0.2:5000/upload_image", true);
+        xhttp.open("POST", "localhost:5000/upload_image", true);
         xhttp.setRequestHeader("Content-type", "application/json");
         // Use JSON.stringify() to convert the JavaScript object into a JSON string and send those
         // paremeters to the API.
